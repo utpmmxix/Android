@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="app.conoceme.myapplication_yens.Views.Interfaces.activity_mi_perfil">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Configuración"
+        app:showAsAction="never" />
+
+
+
+
+</menu>

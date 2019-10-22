@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Interfaces.activiy_verificacion_cuenta">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/img_candado"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recuperación de la cuenta"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#585555"
+                android:textAlignment="center"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esta pregunta permite demostrar que realmente eres el propietario de esta cuenta jaiminito@hotmail.com"
+                android:textSize="20dp"
+                android:textColor="#585555"
+                android:textAlignment="center"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Se envió un correo electrónico con un código de verificación a jaiminito@hotmail.com"
+                android:textSize="16dp"
+                android:textColor="#585555"
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:drawablePadding="5dp"
+                android:hint="Ingrese el código"
+
+                android:drawableLeft="@drawable/img_llave_v3"
+                android:paddingLeft="10dp"
+                android:textColor="#585555"
+                android:textColorHint="#585555"
+                android:textSize="15dp"
+                android:background="@drawable/bg_rounded_input_field_gris"
+                android:drawableTint="#585555"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <Button
+                android:id="@+id/btnContinuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#cb6060"
+                android:text="CONTINUAR"
+                android:textColor="@android:color/background_light"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            >
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/tvMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <ProgressBar
+                android:id="@+id/progress_registrar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Ya tienes una cuenta? "
+                    android:textColor="#585555"
+                    />
+                <TextView
+                    android:id="@+id/tv_ver_iniciar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar Sesión"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#78BAEB"
+                    />
+
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</FrameLayout>

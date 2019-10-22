@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Views.Interfaces.activity_perfil_otro"
+    tools:showIn="@layout/activity_perfil_otro">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        >
+
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp">
+            <Button
+                android:id="@+id/btnNombre"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_column="1"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/img_usuario_name"
+                android:textColorHint="#4AA9F5"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:drawableTint="#4AA9F5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Jessica Ana."
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="?colorPrimary"
+
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="me gusta estudiar psicología porque me ayuda a mejorar como personas y como profesional."
+                android:layout_column="2"
+                android:textSize="15dp"
+                android:textColor="?colorPrimary"
+
+                />
+
+
+        </TableRow>
+
+        <!--sentimetanl-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CEC7C7"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:textAlignment="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="INTERÉS"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="?colorPrimary"
+                android:layout_column="2"
+
+                />
+        </LinearLayout>
+
+        <!--estado sentimental-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Estado sentimental"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Soltero" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--intereses-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Interés"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Mujer" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Cargo laboral-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Interés sentimental"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Amistad" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--LABORAL-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CEC7C7"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:textAlignment="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="DATO LABORAL"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="?colorPrimary"
+                android:layout_column="2"
+
+                />
+        </LinearLayout>
+
+        <!--estado ocupacional-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Estado ocupacional"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Estudiante" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--institucion laboral-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Institución laboral"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Everist" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Cargo laboral-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Puesto"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Practicante programador" />
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <!--ESTUDIOS-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CEC7C7"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:textAlignment="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="ESTUDIOS"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="?colorPrimary"
+                android:layout_column="2"
+
+                />
+        </LinearLayout>
+
+        <!--grado academico-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Grado académico"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Profesional Titulado" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--idiomas-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Especialidad en idiomas"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Español, Inglés, Italiano" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Carrera-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Carrera actual"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Ing. Software" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Centro de estudio-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Centro de estudio actual"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="UTP" />
+
+            </LinearLayout>
+        </TableRow>
+
+
+        <!--INFORMACION-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#CEC7C7"
+            android:orientation="horizontal"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:textAlignment="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="INFORMACION"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:textColor="?colorPrimary"
+                android:layout_column="2"
+
+                />
+        </LinearLayout>
+
+        <!--Sexo-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Sexo"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tv_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Hombre" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Edad-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Edad"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="25" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Telefono-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Teléfono"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="998-5561" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Ciudad-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Ciudad"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Lima District" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <!--Pais-->
+        <TableRow
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <LinearLayout android:layout_column="2" android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="País"
+                    android:textColor="?colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:text="Perú" />
+
+            </LinearLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+</android.support.v4.widget.NestedScrollView>

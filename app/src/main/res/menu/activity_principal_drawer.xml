@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/img_foto"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_conocer"
+            android:icon="@drawable/img_grupo_persona"
+            android:title="Conocer" />
+        <item
+            android:id="@+id/nav_invitacion"
+            android:icon="@drawable/ic_corazon_v5"
+            android:title="Invitación" />
+        <item
+            android:id="@+id/nav_mensaje"
+            android:icon="@drawable/img_chat"
+            android:title="Mensaje" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/img_configuracion"
+            android:title="Configuracion" />
+
+    </group>
+
+
+</menu>

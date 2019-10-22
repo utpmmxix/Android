@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Interfaces.activity_cambiar_clave">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:background="@drawable/img_candado"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="30dp"
+            >
+            <TextView
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JAIME15"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#585555"
+                android:textAlignment="center"
+                />
+
+        </TableRow>
+
+        <!-- texto informativo-->
+
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar mi contraseña"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#585555"
+                android:textAlignment="center"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Para proteger mejor tu cuenta, selecciona una contraseña de 8 caracteres como mínimo, que contenga una combinación mayúsculas, minúsculas, números y/o símbolos."
+                android:textSize="20dp"
+                android:textColor="#585555"
+                android:textAlignment="center"
+                />
+
+        </TableRow>
+        <!-- clave-->
+
+        <TableRow
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            <EditText
+                android:id="@+id/txtClaveActual_c"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:drawablePadding="5dp"
+                android:hint="Contraseña actual"
+
+                android:drawableLeft="@drawable/img_lock"
+                android:paddingLeft="10dp"
+                android:textColor="#585555"
+                android:textColorHint="#585555"
+                android:textSize="15dp"
+                android:background="@drawable/bg_rounded_input_field_gris"
+                android:drawableTint="#585555"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            <EditText
+                android:id="@+id/txtClaveNueva_c"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:drawablePadding="5dp"
+                android:hint="Contraseña nueva"
+
+                android:drawableLeft="@drawable/img_lock"
+                android:paddingLeft="10dp"
+                android:textColor="#585555"
+                android:textColorHint="#585555"
+                android:textSize="15dp"
+                android:background="@drawable/bg_rounded_input_field_gris"
+                android:drawableTint="#585555"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            >
+            <EditText
+                android:id="@+id/txtConfirmarClave_c"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:drawablePadding="5dp"
+                android:hint="Confirmar contraseña nueva"
+
+                android:drawableLeft="@drawable/img_lock"
+                android:paddingLeft="10dp"
+                android:textColor="#585555"
+                android:textColorHint="#585555"
+                android:textSize="15dp"
+                android:background="@drawable/bg_rounded_input_field_gris"
+                android:drawableTint="#585555"
+                />
+        </TableRow>
+
+        <!-- boton-->
+        <TableRow
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <Button
+                android:id="@+id/btnCambiarClave_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#cb6060"
+                android:text="CAMBIAR CONTRASEÑA"
+                android:textColor="@android:color/background_light"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            >
+            <TextView
+                android:id="@+id/tvMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#cb6060"
+                />
+
+        </TableRow>
+
+        <TableRow
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <ProgressBar
+                android:id="@+id/progress_registrar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <ProgressBar
+                android:id="@+id/progress_cambiar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</FrameLayout>

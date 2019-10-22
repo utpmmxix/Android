@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Interfaces.activity_invitacion">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/aclonica"
+            android:text="Alguien indico que le gustas!"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#05B7CE"
+             />
+
+
+        <ImageButton
+            android:id="@+id/ibtn_perfil_otro"
+            android:layout_marginTop="50dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/foto_perfil"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/aclonica"
+            android:text="María indico que le gustas."
+            android:textAlignment="center"
+            android:textColor="#0F74C5"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_otroContinuar"
+            android:background="@drawable/bg_rounded_match"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:text="Continuar"
+            android:textColor="#ffffff"
+            />
+
+
+        <Button
+            android:id="@+id/btn_otroRechazar"
+            android:background="@drawable/bg_rounded_match_v2"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:text="Rechazar"
+            android:textColor="#968F8F"
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
